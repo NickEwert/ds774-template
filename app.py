@@ -13,7 +13,7 @@ def home():
 
 @app.route("/documents")
 def documents():
-    return render_template('courses.html')
+    return render_template('documents.html')
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
