@@ -75,7 +75,7 @@ def admin():
         elif request.form.get('admin')  == 'Logout':
             session.pop('user_id')
 
-        elif request.form.get('admin') == 'issue':
+        elif request.form.get('issuelog') == 'issue':
             fname = request.form['fname']
             lname = request.form['lname']
             eaddress = request.form['eaddress']
@@ -83,9 +83,9 @@ def admin():
             result = contact_form(fname, lname, eaddress, message)
 
             if result:
-                return render_template('contact.html', message='Thank you for your submission')
+                return render_template('admin.html', message='Thank you for your submission')
             else:
-                return render_template('contact.html', message='Error with submission')
+                return render_template('admin.html', message='Error with submission')
     
 
         
