@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head style = "background-color: aquamarine;">
+<head>
 {% block title %}
 {% endblock %}
   <meta charset="utf-8">
@@ -25,7 +25,7 @@
     
 
   <!-- jumbotron -->
-  <div class="jumbotron text-center">
+  <div style="background:red" class="jumbotron text-center">
     <!-- Your Image here -->
     <img src="{{url_for('static',filename='bobby.jpg')}}" class="rounded-circle" width="250" height="250" alt="">
 
