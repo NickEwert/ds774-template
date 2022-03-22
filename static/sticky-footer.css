@@ -7,6 +7,9 @@ html {
   body {
     margin-bottom: 60px; /* Margin bottom by footer height */
   }
+  table {
+    border: 1px solid black;
+  }
   .footer {
     position: absolute;
     bottom: 0;
