@@ -75,7 +75,7 @@ def admin():
         elif request.form.get('admin')  == 'Logout':
             session.pop('user_id')
 
-        elif request.form.get('issuelog') == 'issue':
+        elif request.form.get('admin') == 'issue':
             fname = request.form['fname']
             lname = request.form['lname']
             eaddress = request.form['eaddress']
